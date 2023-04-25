@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Hate Speech Detect</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- owl carousel style -->
+   <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href={{ url_for('static', filename="assets/css/bootstrap.min.css" )}} )}} )}}
+      )}} )}} )}} )}} )}}>
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href={{ url_for('static', filename="assets/css/style.css" )}} )}} )}} )}} )}}
+      )}} )}} )}}>
+   <!-- Responsive-->
+   <link rel="stylesheet" href={{ url_for('static', filename="assets/css/responsive.css" )}} )}} )}} )}} )}} )}} )}}
+      )}}>
+   <!-- fevicon -->
+   <link rel="icon" href={{ url_for('static', filename="assets/images/fevicon.png" )}} )}} )}} )}} )}} )}} )}} )}}
+      type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href={{ url_for('static', filename="assets/css/jquery.mCustomScrollbar.min.css" )}} )}} )}}
+      )}} )}} )}} )}} )}}>
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href={{ url_for('static', filename="assets/css/owl.carousel.min.css" )}} )}} )}} )}} )}} )}}
+      )}} )}}>
+   <link rel="stylesheet" href={{ url_for('static', filename="assets/css/owl.theme.default.min.css" )}} )}} )}} )}} )}}
+      )}} )}} )}}>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+</head>
+
+<body>
+   <!--header section start -->
+   <div class="header_section">
+      <div class="container">
+         <nav class="navbar navbar-dark bg-dark">
+            <a class="logo" href="index.html">
+               <h1 style="color: white;">Hate Speech Detect</h1>
+            </a>
+            <div class="search_section">
+               <ul>
+                  <li><a href="#">Home</a></li>
+               </ul>
+            </div>
+
+         </nav>
+      </div>
+      <!--banner section start -->
+      <div class="banner_section layout_padding">
+         <div id="my_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="taital_main">
+                              <h4 class="banner_taital"><span class="font_size_90"> </span> </h4>
+                              <p class="banner_text">Enter a Tweet</p>
+                              <!-- <div class="book_bt"><a href="#">Shop Now</a></div> -->
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div><img style="height: 150px;" src={{ url_for('static', filename="assets/images/img-1.png"
+                                 )}} class="image_1">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="button_main">
+                        <form action="/predict" method="post">
+                           <textarea rows="4" cols="" class="Enter_text" placeholder="Type something...."
+                              name="text"></textarea><br>
+                           <button class="search_text">Predict</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+               <i class=""><img src={{ url_for('static', filename="assets/images/left-icon.png" )}}></i>
+            </a>
+            <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+               <i class=""><img src={{ url_for('static', filename="assets/images/right-icon.png" )}}></i>
+            </a>
+         </div>
+      </div>
+      <!--banner section end -->
+   </div>
+   <!--header section end -->
+
+   <!-- footer section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+
+         <div class="copyright_section">
+            <h1 class="copyright_text">
+               Copyright 2020 All Right Reserved <a href="https://html.design"> Free Html Templates</a>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   <!-- Javascript files-->
+   <script src={{ url_for('static', filename="assets/js/jquery.min.js" )}}></script>
+   <script src={{ url_for('static', filename="assets/js/popper.min.js" )}}></script>
+   <script src={{ url_for('static', filename="assets/js/bootstrap.bundle.min.js" )}}></script>
+   <script src={{ url_for('static', filename="assets/js/jquery-3.0.0.min.js" )}}></script>
+   <script src={{ url_for('static', filename="assets/js/plugin.js" )}}></script>
+   <!-- sidebar -->
+   <script src={{ url_for('static', filename="assets/js/jquery.mCustomScrollbar.concat.min.js" )}}></script>
+   <script src={{ url_for('static', filename="assets/js/custom.js" )}}></script>
+   <!-- javascript -->
+   <script src={{ url_for('static', filename="assets/s/owl.carousel.js" )}}></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+   <script src="../../assets/js/vendor/popper.min.js"></script>
+   <script src="../../dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
